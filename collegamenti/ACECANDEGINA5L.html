@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace Candeggina Classico 5L | Detersivi Amato</title>
+    <link rel="icon" type="image/x-icon" href="C:\Users\mbo48\Desktop\detersivo amato\main png\logo-amato.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #003399; /* Blu Intenso Ace */
+            --accent-red: #E60000;   /* Rosso Promozioni */
+            --bg-white: #FFFFFF;
+            --text-dark: #333333;
+            --light-gray: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+            background-color: var(--bg-white);
+        }
+
+        /* HEADER */
+        header {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* LAYOUT PRODOTTO */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .product-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .brand-label {
+            color: var(--primary-blue);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 0.5rem 0;
+        }
+
+        .price-tag {
+            font-size: 1.8rem;
+            color: var(--accent-red);
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+
+        .description {
+            line-height: 1.6;
+            border-top: 1px solid var(--light-gray);
+            padding-top: 1rem;
+        }
+
+        /* BOTTONE TORNA SITO PRINCIPALE */
+        .btn-buy {
+            background-color: var(--accent-red);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.2s, background-color 0.2s;
+            margin-top: 1.5rem;
+        }
+
+        .btn-buy:hover {
+            background-color: #b30000;
+            transform: scale(1.02);
+        }
+
+        /* CARATTERISTICHE (ICONE) */
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            background: var(--light-gray);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+        }
+
+        /* MOBILE OPTIMIZATION */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+<h2>Detersivi Amato</h2>
+</header>
+
+<div class="container">
+    <div class="product-image">
+        <img src="https://jumpshare.com/share/XsvoaGS940FoJrvH82NY" alt="Ace Candeggina Classico 5 Litri">
+    </div>
+
+    <div class="product-info">
+        <span class="brand-label">Qualità Garantita</span>
+        <h1>Ace Candeggina Classico - Formato Risparmio 5 Litri</h1>
+        
+        <div class="price-tag">€ 3,49 <span style="font-size: 1rem; color: #777; font-weight: normal;">(€ 0,70/L)</span></div>
+
+        <div class="description">
+            <p>La <strong>Candeggina Ace Classico</strong> garantisce protezione per la tua casa e per il tuo bucato. Grazie alla sua formula esclusiva, igienizza profondamente, rimuove le macchie più ostinate e restituisce il bianco naturale ai capi.</p>
+            
+            <div class="features">
+                <div class="feature-item">✅ Igiene Profonda</div>
+                <div class="feature-item">✅ Smacchiatura Rapida</div>
+                <div class="feature-item">✅ Formato 5 Litri</div>
+                <div class="feature-item">✅ Protezione Tessuti</div>
+            </div>
+        </div>
+
+        <a href="file:///C:/Users/mbo48/Desktop/detersivo%20amato/index.html#bucato" 
+   style="display: block; background-color: #ff0000; color: #ffffff; text-align: center; padding: 15px 0; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 18px; margin-top: 20px; font-family: Arial, sans-serif;">
+   Torna al sito principale
+</a>
+<footer style="margin-top: 50px; padding: 20px 0; border-top: 1px solid #e0e0e0; text-align: center; font-family: Arial, sans-serif; color: #666666; font-size: 14px;">
+    <p style="margin: 0;">
+        &copy; 2026 <strong>Detersivi Amato</strong> - Tutti i diritti riservati.
+    </p>
+    <p style="margin: 5px 0 0 0; font-size: 12px;">
+        P.IVA 12345678901 | <a href="#" style="color: #666666; text-decoration: none;">Privacy Policy</a>
+    </p>
+</footer>
+    </div>

@@ -1,0 +1,926 @@
+<!doctype html>
+<html lang="it" class="h-full">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detersivi Amato - La Forza del Risparmio</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="/_sdk/data_sdk.js"></script>
+  <link rel="icon" type="image/x-icon" href="https://jumpshare.com/share/yMiVpwHkq4LDKf8xli2I">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+
+  
+  <style>
+    * { font-family: 'Poppins', sans-serif; }
+    html, body { height: 100%; margin: 0; }
+    .hero-gradient { background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #1e40af 100%); }
+    .card-shadow { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+    .btn-primary { transition: all 0.3s ease; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(220,38,38,0.4); }
+    .product-card:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
+    .category-card:hover { transform: scale(1.05); }
+    .fade-in { animation: fadeIn 0.6s ease-out; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .scroll-smooth { scroll-behavior: smooth; }
+    .badge-sale { animation: pulse 2s infinite; }
+    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+    .nav-link { position: relative; }
+    .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: #dc2626; transition: width 0.3s; }
+    .nav-link:hover::after { width: 100%; }
+    .volantino-scroll { scroll-snap-type: x mandatory; }
+    .volantino-item { scroll-snap-align: center; }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+ </head>
+ <body class="h-full bg-white text-gray-800 scroll-smooth overflow-auto"><!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-md z-50 transition-all duration-300">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16 md:h-20"><!-- Logo --> <a href="#home" class="flex items-center space-x-2">
+      <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center overflow-hidden border border-gray-100 shadow-sm">
+                        <img src="https://jumpshare.com/share/yMiVpwHkq4LDKf8xli2I" alt="Logo Amato" class="w-full h-full object-cover">
+      </div><span class="text-blue-700 font-bold text-lg md:text-xl hidden sm:block">Detersivi Amato</span> </a> <!-- Desktop Menu -->
+     <div class="hidden lg:flex items-center space-x-8"><a href="#home" class="nav-link text-gray-700 hover:text-blue-700 font-medium">Home</a> <a href="#categorie" class="nav-link text-gray-700 hover:text-blue-700 font-medium">Categorie</a> <a href="#prodotti" class="nav-link text-gray-700 hover:text-blue-700 font-medium">Prodotti</a> <a href="#volantino" class="nav-link text-gray-700 hover:text-blue-700 font-medium">Volantino</a> <a href="#chi-siamo" class="nav-link text-gray-700 hover:text-blue-700 font-medium">Chi Siamo</a> <a href="#contatti" class="nav-link text-gray-700 hover:text-blue-700 font-medium">Contatti</a>
+     </div><!-- Mobile Menu Button --> <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
+      <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg></button>
+    </div>
+   </div><!-- Mobile Menu -->
+   <div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
+    <div class="px-4 py-4 space-y-3"><a href="#home" class="block py-2 text-gray-700 hover:text-blue-700 font-medium">Home</a> <a href="#categorie" class="block py-2 text-gray-700 hover:text-blue-700 font-medium">Categorie</a> <a href="#prodotti" class="block py-2 text-gray-700 hover:text-blue-700 font-medium">Prodotti</a> <a href="#volantino" class="block py-2 text-gray-700 hover:text-blue-700 font-medium">Volantino</a> <a href="#chi-siamo" class="block py-2 text-gray-700 hover:text-blue-700 font-medium">Chi Siamo</a> <a href="#contatti" class="block py-2 text-gray-700 hover:text-blue-700 font-medium">Contatti</a>
+    </div>
+   </div>
+  </nav><!-- Hero Section -->
+  <section id="home" class="hero-gradient min-h-screen pt-20 md:pt-24 flex items-center relative overflow-hidden">
+   <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-20 left-10 w-32 h-32 bg-white rounded-full"></div>
+    <div class="absolute bottom-20 right-20 w-48 h-48 bg-white rounded-full"></div>
+    <div class="absolute top-1/2 left-1/3 w-24 h-24 bg-white rounded-full"></div>
+   </div>
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 relative z-10">
+    <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+     <div class="text-center lg:text-left fade-in">
+      <div class="inline-block bg-red-600 text-white text-sm font-semibold px-4 py-1 rounded-full mb-4 badge-sale">
+       🔥 VOLANTINO SEMPRE ATTIVO
+      </div>
+      <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-4">Detersivi Amato</h1>
+      <p id="hero-slogan" class="text-xl md:text-2xl lg:text-3xl text-blue-100 font-light mb-8">La forza del risparmio</p>
+      <p class="text-lg text-blue-100 mb-8 max-w-xl mx-auto lg:mx-0">Prodotti di qualità professionale per la pulizia della tua casa. Risparmia senza rinunciare all'eccellenza!</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"><a href="#prodotti" class="btn-primary bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-full text-lg inline-flex items-center justify-center space-x-2"> <span>Scopri i prodotti</span>
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg></a> <a href="#volantino" class="bg-white/20 hover:bg-white/30 text-white font-semibold py-4 px-8 rounded-full text-lg inline-flex items-center justify-center space-x-2 transition-all"> <span>📄 Sfoglia Volantino</span> </a>
+      </div>
+     </div>
+     <div class="flex justify-center lg:justify-end fade-in">
+      <div class="relative">
+      <div class="relative p-2 bg-white/20 backdrop-blur-xl rounded-[60px] logo-glow shadow-2xl">
+                        <img src="https://jumpshare.com/share/0drxhMez4Es3wCsrkaY4" alt="Detersivi Amato" class="w-80 h-80 md:w-[450px] md:h-[450px] object-cover rounded-[50px]">
+        </div>
+        </div>
+       <div class="absolute -top-4 -right-4 bg-yellow-400 text-gray-900 font-bold py-2 px-4 rounded-full text-sm animate-bounce">
+        RISPARMIA!
+       </div>
+      </div>
+     </div>
+    </div>
+   </div><!-- Wave Divider -->
+   <div class="absolute bottom-0 left-0 right-0">
+    <svg viewbox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white" />
+    </svg>
+   </div>
+  </section><!-- Categorie Section -->
+  <section id="categorie" class="py-16 md:py-24 bg-white">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Le Nostre Categorie</h2>
+     <p class="text-gray-600 text-lg max-w-2xl mx-auto">Scopri la nostra vasta gamma di prodotti per ogni esigenza di pulizia</p>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6"><!-- Bucato -->
+     <div class="category-card bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 text-center cursor-pointer transition-all duration-300 card-shadow hover:shadow-xl">
+      <div class="w-16 h-16 mx-auto mb-4 bg-blue-600 rounded-full flex items-center justify-center"><span class="text-3xl">👕</span>
+      </div>
+      <h3 class="font-semibold text-gray-800">Bucato</h3>
+     </div><!-- Piatti -->
+     <div class="category-card bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-6 text-center cursor-pointer transition-all duration-300 card-shadow hover:shadow-xl">
+      <div class="w-16 h-16 mx-auto mb-4 bg-green-600 rounded-full flex items-center justify-center"><span class="text-3xl">🍽️</span>
+      </div>
+      <h3 class="font-semibold text-gray-800">Piatti</h3>
+     </div><!-- Superfici -->
+     <div class="category-card bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-6 text-center cursor-pointer transition-all duration-300 card-shadow hover:shadow-xl">
+      <div class="w-16 h-16 mx-auto mb-4 bg-purple-600 rounded-full flex items-center justify-center"><span class="text-3xl">✨</span>
+      </div>
+      <h3 class="font-semibold text-gray-800">Superfici</h3>
+     </div><!-- Bagno -->
+     <div class="category-card bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-2xl p-6 text-center cursor-pointer transition-all duration-300 card-shadow hover:shadow-xl">
+      <div class="w-16 h-16 mx-auto mb-4 bg-cyan-600 rounded-full flex items-center justify-center"><span class="text-3xl">🚿</span>
+      </div>
+      <h3 class="font-semibold text-gray-800">Bagno</h3>
+     </div><!-- Pet -->
+     <div class="category-card bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-6 text-center cursor-pointer transition-all duration-300 card-shadow hover:shadow-xl">
+      <div class="w-16 h-16 mx-auto mb-4 bg-orange-600 rounded-full flex items-center justify-center"><span class="text-3xl">🐾</span>
+      </div>
+      <h3 class="font-semibold text-gray-800">Pet</h3>
+     </div><!-- Bagnoschiuma -->
+     <div class="category-card bg-gradient-to-br from-pink-50 to-pink-100 rounded-2xl p-6 text-center cursor-pointer transition-all duration-300 card-shadow hover:shadow-xl">
+      <div class="w-16 h-16 mx-auto mb-4 bg-pink-600 rounded-full flex items-center justify-center"><span class="text-3xl">🧴</span>
+      </div>
+      <h3 class="font-semibold text-gray-800">Bagnoschiuma</h3>
+     </div><!-- Shampoo -->
+     <div class="category-card bg-gradient-to-br from-rose-50 to-rose-100 rounded-2xl p-6 text-center cursor-pointer transition-all duration-300 card-shadow hover:shadow-xl">
+      <div class="w-16 h-16 mx-auto mb-4 bg-rose-600 rounded-full flex items-center justify-center"><span class="text-3xl">💆</span>
+      </div>
+      <h3 class="font-semibold text-gray-800">Shampoo</h3>
+     </div><!-- Balsamo -->
+     <div class="category-card bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl p-6 text-center cursor-pointer transition-all duration-300 card-shadow hover:shadow-xl">
+      <div class="w-16 h-16 mx-auto mb-4 bg-amber-600 rounded-full flex items-center justify-center"><span class="text-3xl">💇</span>
+      </div>
+      <h3 class="font-semibold text-gray-800">Balsamo</h3>
+     </div><!-- Kids -->
+     <div class="category-card bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-2xl p-6 text-center cursor-pointer transition-all duration-300 card-shadow hover:shadow-xl">
+      <div class="w-16 h-16 mx-auto mb-4 bg-yellow-500 rounded-full flex items-center justify-center"><span class="text-3xl">👶</span>
+      </div>
+      <h3 class="font-semibold text-gray-800">Kids</h3>
+     </div><!-- Profumi -->
+     <div class="category-card bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-2xl p-6 text-center cursor-pointer transition-all duration-300 card-shadow hover:shadow-xl">
+      <div class="w-16 h-16 mx-auto mb-4 bg-indigo-600 rounded-full flex items-center justify-center"><span class="text-3xl">🌸</span>
+      </div>
+      <h3 class="font-semibold text-gray-800">Profumi</h3>
+     </div>
+    </div>
+   </div>
+  </section><!-- Prodotti Bestseller Section -->
+  <section id="prodotti" class="py-16 md:py-24 bg-gray-50">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12"><span class="bg-red-100 text-red-600 text-sm font-semibold px-4 py-1 rounded-full">⭐ I PIÙ VENDUTI</span>
+     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-4 mb-4">Prodotti Bestseller</h2>
+     <p class="text-gray-600 text-lg max-w-2xl mx-auto">I prodotti più amati dai nostri clienti, qualità garantita al miglior prezzo</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"><!-- Prodotto 1 - In Offerta -->
+     <div class="product-card bg-white rounded-2xl overflow-hidden card-shadow transition-all duration-300 relative">
+      <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full badge-sale z-10">
+       -30% OFFERTA
+      </div>
+      <div class="h-48 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+        <img src="https://jumpshare.com/share/XsvoaGS940FoJrvH82NY" alt="Ace Candeggina 5L" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+      </div>
+      <div class="p-5"><span class="text-xs text-blue-600 font-semibold uppercase tracking-wide">Bucato</span>
+       <h3 class="font-bold text-gray-900 text-lg mt-1 mb-2">Detersivo Lavatrice Pro</h3>
+       <div class="flex items-center gap-2 mb-4"><span class="text-2xl font-bold text-blue-700">€4,99</span> <span class="text-sm text-gray-400 line-through">€7,99</span>
+       </div><a href="file:///C:/Users/mbo48/Desktop/detersivo%20amato/prodotti%20png/ACECANDEGINA5L.html" target="_blank" rel="noopener noreferrer" class="block w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-4 rounded-xl text-center transition-all"> Visualizza prodotto </a>
+      </div>
+     </div><!-- Prodotto 2 -->
+     <div class="product-card bg-white rounded-2xl overflow-hidden card-shadow transition-all duration-300">
+      <div class="h-48 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center"><span class="text-7xl">🫧</span>
+      </div>
+      <div class="p-5"><span class="text-xs text-green-600 font-semibold uppercase tracking-wide">Piatti</span>
+       <h3 class="font-bold text-gray-900 text-lg mt-1 mb-2">Detersivo Piatti Limone</h3>
+       <div class="flex items-center gap-2 mb-4"><span class="text-2xl font-bold text-blue-700">€2,49</span>
+       </div><a href="#" target="_blank" rel="noopener noreferrer" class="block w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-4 rounded-xl text-center transition-all"> Visualizza prodotto </a>
+      </div>
+     </div><!-- Prodotto 3 - In Offerta -->
+     <div class="product-card bg-white rounded-2xl overflow-hidden card-shadow transition-all duration-300 relative">
+      <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full badge-sale z-10">
+       -25% OFFERTA
+      </div>
+      <div class="h-48 bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center"><span class="text-7xl">🧹</span>
+      </div>
+      <div class="p-5"><span class="text-xs text-purple-600 font-semibold uppercase tracking-wide">Superfici</span>
+       <h3 class="font-bold text-gray-900 text-lg mt-1 mb-2">Sgrassatore Universale</h3>
+       <div class="flex items-center gap-2 mb-4"><span class="text-2xl font-bold text-blue-700">€3,49</span> <span class="text-sm text-gray-400 line-through">€4,99</span>
+       </div><a href="#" target="_blank" rel="noopener noreferrer" class="block w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-4 rounded-xl text-center transition-all"> Visualizza prodotto </a>
+      </div>
+     </div><!-- Prodotto 4 -->
+     <div class="product-card bg-white rounded-2xl overflow-hidden card-shadow transition-all duration-300">
+      <div class="h-48 bg-gradient-to-br from-cyan-100 to-cyan-200 flex items-center justify-center"><span class="text-7xl">🚽</span>
+      </div>
+      <div class="p-5"><span class="text-xs text-cyan-600 font-semibold uppercase tracking-wide">Bagno</span>
+       <h3 class="font-bold text-gray-900 text-lg mt-1 mb-2">Anticalcare Bagno</h3>
+       <div class="flex items-center gap-2 mb-4"><span class="text-2xl font-bold text-blue-700">€3,99</span>
+       </div><a href="#" target="_blank" rel="noopener noreferrer" class="block w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-4 rounded-xl text-center transition-all"> Visualizza prodotto </a>
+      </div>
+     </div><!-- Prodotto 5 - In Offerta -->
+     <div class="product-card bg-white rounded-2xl overflow-hidden card-shadow transition-all duration-300 relative">
+      <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full badge-sale z-10">
+       -20% OFFERTA
+      </div>
+      <div class="h-48 bg-gradient-to-br from-pink-100 to-pink-200 flex items-center justify-center"><span class="text-7xl">🧴</span>
+      </div>
+      <div class="p-5"><span class="text-xs text-pink-600 font-semibold uppercase tracking-wide">Bagnoschiuma</span>
+       <h3 class="font-bold text-gray-900 text-lg mt-1 mb-2">Bagnoschiuma Relax</h3>
+       <div class="flex items-center gap-2 mb-4"><span class="text-2xl font-bold text-blue-700">€2,99</span> <span class="text-sm text-gray-400 line-through">€3,79</span>
+       </div><a href="#" target="_blank" rel="noopener noreferrer" class="block w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-4 rounded-xl text-center transition-all"> Visualizza prodotto </a>
+      </div>
+     </div><!-- Prodotto 6 -->
+     <div class="product-card bg-white rounded-2xl overflow-hidden card-shadow transition-all duration-300">
+      <div class="h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center"><span class="text-7xl">🐕</span>
+      </div>
+      <div class="p-5"><span class="text-xs text-orange-600 font-semibold uppercase tracking-wide">Pet</span>
+       <h3 class="font-bold text-gray-900 text-lg mt-1 mb-2">Shampoo Cani Delicato</h3>
+       <div class="flex items-center gap-2 mb-4"><span class="text-2xl font-bold text-blue-700">€5,99</span>
+       </div><a href="#" target="_blank" rel="noopener noreferrer" class="block w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-4 rounded-xl text-center transition-all"> Visualizza prodotto </a>
+      </div>
+     </div><!-- Prodotto 7 -->
+     <div class="product-card bg-white rounded-2xl overflow-hidden card-shadow transition-all duration-300">
+      <div class="h-48 bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center"><span class="text-7xl">👶</span>
+      </div>
+      <div class="p-5"><span class="text-xs text-yellow-600 font-semibold uppercase tracking-wide">Kids</span>
+       <h3 class="font-bold text-gray-900 text-lg mt-1 mb-2">Bagnoschiuma Baby</h3>
+       <div class="flex items-center gap-2 mb-4"><span class="text-2xl font-bold text-blue-700">€4,49</span>
+       </div><a href="#" target="_blank" rel="noopener noreferrer" class="block w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-4 rounded-xl text-center transition-all"> Visualizza prodotto </a>
+      </div>
+     </div><!-- Prodotto 8 - In Offerta -->
+     <div class="product-card bg-white rounded-2xl overflow-hidden card-shadow transition-all duration-300 relative">
+      <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full badge-sale z-10">
+       -15% OFFERTA
+      </div>
+      <div class="h-48 bg-gradient-to-br from-indigo-100 to-indigo-200 flex items-center justify-center"><span class="text-7xl">🌺</span>
+      </div>
+      <div class="p-5"><span class="text-xs text-indigo-600 font-semibold uppercase tracking-wide">Profumi</span>
+       <h3 class="font-bold text-gray-900 text-lg mt-1 mb-2">Profumo Ambiente Lavanda</h3>
+       <div class="flex items-center gap-2 mb-4"><span class="text-2xl font-bold text-blue-700">€6,49</span> <span class="text-sm text-gray-400 line-through">€7,69</span>
+       </div><a href="#" target="_blank" rel="noopener noreferrer" class="block w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-4 rounded-xl text-center transition-all"> Visualizza prodotto </a>
+      </div>
+     </div>
+    </div>
+    <div class="text-center mt-12"><a href="#categorie" class="inline-flex items-center space-x-2 bg-white border-2 border-blue-700 text-blue-700 hover:bg-blue-700 hover:text-white font-semibold py-3 px-8 rounded-full transition-all"> <span>Vedi tutti i prodotti</span>
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+      </svg></a>
+    </div>
+   </div>
+  </section><!-- Volantino Section -->
+  <section id="volantino" class="py-16 md:py-24 bg-blue-700">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12"><span class="bg-white/20 text-white text-sm font-semibold px-4 py-1 rounded-full">📄 SFOGLIA IL VOLANTINO</span>
+     <h2 class="text-3xl md:text-4xl font-bold text-white mt-4 mb-4">Offerte del Volantino Attuale</h2>
+     <p class="text-blue-100 text-lg max-w-2xl mx-auto">Scopri tutte le promozioni attive! Usa le frecce per navigare tra le pagine del volantino</p>
+    </div>
+    <div class="relative"><!-- Volantino Container -->
+     <div id="volantino-container" class="volantino-scroll flex overflow-x-auto snap-x snap-mandatory gap-6 pb-4 scrollbar-hide" style="scrollbar-width: none; -ms-overflow-style: none;"><!-- Pagina 1 -->
+      <div class="volantino-item flex-shrink-0 w-full sm:w-4/5 md:w-3/5 lg:w-2/5 bg-white rounded-2xl overflow-hidden card-shadow">
+       <div class="bg-gradient-to-br from-red-500 to-red-600 p-4 text-center">
+        <h3 class="text-white font-bold text-xl">OFFERTE BUCATO</h3>
+        <p class="text-red-100 text-sm">Valido fino al 31/12/2026</p>
+       </div>
+       <div class="p-6 space-y-4">
+        <div class="flex items-center justify-between border-b pb-3">
+         <div class="flex items-center gap-3"><span class="text-4xl">🧺</span>
+          <div>
+           <p class="font-semibold">Detersivo 5L</p>
+           <p class="text-sm text-gray-500">Profumo Lavanda</p>
+          </div>
+         </div>
+         <div class="text-right">
+          <p class="text-red-600 font-bold text-xl">€8,99</p>
+          <p class="text-xs text-gray-400 line-through">€12,99</p>
+         </div>
+        </div>
+        <div class="flex items-center justify-between border-b pb-3">
+         <div class="flex items-center gap-3"><span class="text-4xl">🌀</span>
+          <div>
+           <p class="font-semibold">Ammorbidente 3L</p>
+           <p class="text-sm text-gray-500">Freschezza Alpina</p>
+          </div>
+         </div>
+         <div class="text-right">
+          <p class="text-red-600 font-bold text-xl">€5,49</p>
+          <p class="text-xs text-gray-400 line-through">€7,99</p>
+         </div>
+        </div>
+        <div class="flex items-center justify-between">
+         <div class="flex items-center gap-3"><span class="text-4xl">✨</span>
+          <div>
+           <p class="font-semibold">Smacchiatore</p>
+           <p class="text-sm text-gray-500">Azione intensiva</p>
+          </div>
+         </div>
+         <div class="text-right">
+          <p class="text-red-600 font-bold text-xl">€3,99</p>
+          <p class="text-xs text-gray-400 line-through">€5,49</p>
+          
+         </div>
+        </div>
+       </div>
+      </div><!-- Pagina 2 -->
+      <div class="volantino-item flex-shrink-0 w-full sm:w-4/5 md:w-3/5 lg:w-2/5 bg-white rounded-2xl overflow-hidden card-shadow">
+       <div class="bg-gradient-to-br from-green-500 to-green-600 p-4 text-center">
+        <h3 class="text-white font-bold text-xl">OFFERTE CUCINA</h3>
+        <p class="text-green-100 text-sm">Valido fino al 31/12/2026</p>
+       </div>
+       <div class="p-6 space-y-4">
+        <div class="flex items-center justify-between border-b pb-3">
+         <div class="flex items-center gap-3"><span class="text-4xl">🫧</span>
+          <div>
+           <p class="font-semibold">Detersivo Piatti 1L</p>
+           <p class="text-sm text-gray-500">Limone concentrato</p>
+          </div>
+         </div>
+         <div class="text-right">
+          <p class="text-green-600 font-bold text-xl">€1,99</p>
+          <p class="text-xs text-gray-400 line-through">€2,99</p>
+         </div>
+        </div>
+        <div class="flex items-center justify-between border-b pb-3">
+         <div class="flex items-center gap-3"><span class="text-4xl">🧽</span>
+          <div>
+           <p class="font-semibold">Spugne Pack x6</p>
+           <p class="text-sm text-gray-500">Antigraffio</p>
+          </div>
+         </div>
+         <div class="text-right">
+          <p class="text-green-600 font-bold text-xl">€2,49</p>
+          <p class="text-xs text-gray-400 line-through">€3,99</p>
+         </div>
+        </div>
+        <div class="flex items-center justify-between">
+         <div class="flex items-center gap-3"><span class="text-4xl">🧹</span>
+          <div>
+           <p class="font-semibold">Sgrassatore Cucina</p>
+           <p class="text-sm text-gray-500">750ml spray</p>
+          </div>
+         </div>
+         <div class="text-right">
+          <p class="text-green-600 font-bold text-xl">€2,99</p>
+          <p class="text-xs text-gray-400 line-through">€4,29</p>
+         </div>
+        </div>
+       </div>
+      </div><!-- Pagina 3 -->
+      <div class="volantino-item flex-shrink-0 w-full sm:w-4/5 md:w-3/5 lg:w-2/5 bg-white rounded-2xl overflow-hidden card-shadow">
+       <div class="bg-gradient-to-br from-purple-500 to-purple-600 p-4 text-center">
+        <h3 class="text-white font-bold text-xl">OFFERTE BAGNO</h3>
+        <p class="text-purple-100 text-sm">Valido fino al 31/12/2026</p>
+       </div>
+       <div class="p-6 space-y-4">
+        <div class="flex items-center justify-between border-b pb-3">
+         <div class="flex items-center gap-3"><span class="text-4xl">🚿</span>
+          <div>
+           <p class="font-semibold">Anticalcare 750ml</p>
+           <p class="text-sm text-gray-500">Azione brillante</p>
+          </div>
+         </div>
+         <div class="text-right">
+          <p class="text-purple-600 font-bold text-xl">€2,99</p>
+          <p class="text-xs text-gray-400 line-through">€4,49</p>
+         </div>
+        </div>
+        <div class="flex items-center justify-between border-b pb-3">
+         <div class="flex items-center gap-3"><span class="text-4xl">🚽</span>
+          <div>
+           <p class="font-semibold">WC Gel Disinfettante</p>
+           <p class="text-sm text-gray-500">Profumo Pino</p>
+          </div>
+         </div>
+         <div class="text-right">
+          <p class="text-purple-600 font-bold text-xl">€1,79</p>
+          <p class="text-xs text-gray-400 line-through">€2,49</p>
+         </div>
+        </div>
+        <div class="flex items-center justify-between">
+         <div class="flex items-center gap-3"><span class="text-4xl">🧴</span>
+          <div>
+           <p class="font-semibold">Bagnoschiuma 1L</p>
+           <p class="text-sm text-gray-500">Aloe Vera</p>
+          </div>
+         </div>
+         <div class="text-right">
+          <p class="text-purple-600 font-bold text-xl">€3,49</p>
+          <p class="text-xs text-gray-400 line-through">€4,99</p>
+         </div>
+        </div>
+       </div>
+      </div><!-- Pagina 4 -->
+      <div class="volantino-item flex-shrink-0 w-full sm:w-4/5 md:w-3/5 lg:w-2/5 bg-white rounded-2xl overflow-hidden card-shadow">
+       <div class="bg-gradient-to-br from-pink-500 to-pink-600 p-4 text-center">
+        <h3 class="text-white font-bold text-xl">OFFERTE CURA PERSONA</h3>
+        <p class="text-pink-100 text-sm">Valido fino al 31/12/2026</p>
+       </div>
+       <div class="p-6 space-y-4">
+        <div class="flex items-center justify-between border-b pb-3">
+         <div class="flex items-center gap-3"><span class="text-4xl">💆</span>
+          <div>
+           <p class="font-semibold">Shampoo 500ml</p>
+           <p class="text-sm text-gray-500">Per capelli normali</p>
+          </div>
+         </div>
+         <div class="text-right">
+          <p class="text-pink-600 font-bold text-xl">€3,99</p>
+          <p class="text-xs text-gray-400 line-through">€5,99</p>
+         </div>
+        </div>
+        <div class="flex items-center justify-between border-b pb-3">
+         <div class="flex items-center gap-3"><span class="text-4xl">💇</span>
+          <div>
+           <p class="font-semibold">Balsamo 500ml</p>
+           <p class="text-sm text-gray-500">Nutriente</p>
+          </div>
+         </div>
+         <div class="text-right">
+          <p class="text-pink-600 font-bold text-xl">€4,49</p>
+          <p class="text-xs text-gray-400 line-through">€6,49</p>
+         </div>
+        </div>
+        <div class="flex items-center justify-between">
+         <div class="flex items-center gap-3"><span class="text-4xl">👶</span>
+          <div>
+           <p class="font-semibold">Crema Baby</p>
+           <p class="text-sm text-gray-500">Dermatologicamente testata</p>
+          </div>
+         </div>
+         <div class="text-right">
+          <p class="text-pink-600 font-bold text-xl">€5,99</p>
+          <p class="text-xs text-gray-400 line-through">€7,99</p>
+         </div>
+        </div>
+       </div>
+      </div>
+       </div><!-- Navigation Arrows --> <button id="volantino-prev" class="absolute left-2 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-all z-10">
+      <svg class="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg></button> <button id="volantino-next" class="absolute right-2 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-all z-10">
+      <svg class="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg></button>
+    </div>
+    <div class="text-center mt-8">
+     <p class="text-blue-100 text-sm">Scorri o usa le frecce per vedere tutte le offerte</p>
+    </div>
+   </div>
+  </section><!-- Chi Siamo Section -->
+  <section id="chi-siamo" class="py-16 md:py-24 bg-white">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+     <div><span class="bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-1 rounded-full">👋 CONOSCIAMOCI</span>
+      <h2 id="about-title" class="text-3xl md:text-4xl font-bold text-gray-900 mt-4 mb-6">Chi Siamo</h2>
+      <p class="text-gray-600 text-lg leading-relaxed mb-6">Detersivi Amato nasce per offrire prodotti di qualità professionale a prezzi accessibili. Crediamo che la pulizia non debba essere un lusso ma un diritto.</p>
+      <p class="text-gray-600 text-lg leading-relaxed mb-8">Garantiamo qualità, risparmio e sicurezza per ogni famiglia. La nostra missione è portare nelle case italiane prodotti efficaci e conveniente, senza compromessi sulla qualità.</p>
+      <div class="grid grid-cols-2 gap-6">
+       <div class="flex items-center space-x-3">
+        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center"><span class="text-2xl">✅</span>
+        </div>
+        <div>
+         <p class="font-semibold text-gray-900">Qualità Garantita</p>
+         <p class="text-sm text-gray-500">Prodotti testati</p>
+        </div>
+       </div>
+       <div class="flex items-center space-x-3">
+        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center"><span class="text-2xl">💰</span>
+        </div>
+        <div>
+         <p class="font-semibold text-gray-900">Prezzi Bassi</p>
+         <p class="text-sm text-gray-500">Sempre convenienti</p>
+        </div>
+       </div>
+       <div class="flex items-center space-x-3">
+        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center"><span class="text-2xl">🏠</span>
+        </div>
+        <div>
+         <p class="font-semibold text-gray-900">Per la Famiglia</p>
+         <p class="text-sm text-gray-500">Sicuri per tutti</p>
+        </div>
+       </div>
+       <div class="flex items-center space-x-3">
+        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center"><span class="text-2xl">🇮🇹</span>
+        </div>
+        <div>
+         <p class="font-semibold text-gray-900">Made in Italy</p>
+         <p class="text-sm text-gray-500">Qualità italiana</p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="relative">
+      <div class="bg-gradient-to-br from-blue-100 to-blue-200 rounded-3xl p-8 relative">
+       <div class="grid grid-cols-2 gap-4">
+        <div class="bg-white rounded-2xl p-6 text-center card-shadow">
+         <p class="text-4xl font-bold text-blue-700">10+</p>
+         <p class="text-gray-600 text-sm">Anni di esperienza</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 text-center card-shadow">
+         <p class="text-4xl font-bold text-blue-700">500+</p>
+         <p class="text-gray-600 text-sm">Prodotti disponibili</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 text-center card-shadow">
+         <p class="text-4xl font-bold text-blue-700">2</p>
+         <p class="text-gray-600 text-sm">Sedi in Campania</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 text-center card-shadow">
+         <p class="text-4xl font-bold text-blue-700">1000+</p>
+         <p class="text-gray-600 text-sm">Clienti soddisfatti</p>
+        </div>
+       </div>
+       <div class="absolute -top-4 -right-4 bg-red-600 text-white font-bold py-2 px-4 rounded-full text-sm">
+        DAL 2019
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Contatti Section -->
+  <section id="contatti" class="py-16 md:py-24 bg-gray-50">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12"><span class="bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-1 rounded-full">📞 CONTATTACI</span>
+     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-4 mb-4">Hai Domande?</h2>
+     <p class="text-gray-600 text-lg max-w-2xl mx-auto">Siamo qui per aiutarti! Compila il modulo o contattaci direttamente</p>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-12"><!-- Contact Form -->
+     <div class="bg-white rounded-2xl p-6 md:p-8 card-shadow">
+      <h3 class="text-xl font-bold text-gray-900 mb-6">Invia un messaggio</h3>
+      <form id="contact-form" class="space-y-5">
+       <div><label for="name" class="block text-sm font-medium text-gray-700 mb-2">Nome completo *</label> <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" placeholder="Mario Rossi">
+       </div>
+       <div><label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email *</label> <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" placeholder="mario@esempio.it">
+       </div>
+       <div><label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Telefono</label> <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" placeholder="+39 333 1234567">
+       </div>
+       <div><label for="message" class="block text-sm font-medium text-gray-700 mb-2">Messaggio *</label> <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none" placeholder="Scrivi il tuo messaggio..."></textarea>
+       </div><button type="submit" id="submit-btn" class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-6 rounded-xl transition-all flex items-center justify-center space-x-2"> <span>Invia Messaggio</span>
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+        </svg></button>
+      </form><!-- Success/Error Messages -->
+      <div id="form-success" class="hidden mt-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded-xl">
+       <div class="flex items-center space-x-2"><span class="text-xl">✅</span> <span>Messaggio inviato con successo! Ti risponderemo presto.</span>
+       </div>
+      </div>
+      <div id="form-error" class="hidden mt-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded-xl">
+       <div class="flex items-center space-x-2"><span class="text-xl">❌</span> <span>Errore nell'invio. Riprova più tardi.</span>
+       </div>
+      </div>
+     </div><!-- Contact Info -->
+     <div class="space-y-6"><!-- Email -->
+      <div class="bg-white rounded-2xl p-6 card-shadow flex items-center space-x-4">
+       <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0"><span class="text-2xl">📧</span>
+       </div>
+       <div>
+        <h4 class="font-semibold text-gray-900">Email</h4><a id="contact-email-link" href="mailto:annaelisa2019@gmail.com" class="text-blue-700 hover:underline">annaelisa2019@gmail.com</a>
+       </div>
+      </div><!-- Phone -->
+      <div class="bg-white rounded-2xl p-6 card-shadow flex items-center space-x-4">
+       <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0"><span class="text-2xl">📞</span>
+       </div>
+       <div>
+        <h4 class="font-semibold text-gray-900">Telefono</h4><a id="contact-phone-link" href="tel:+393295758447" class="text-blue-700 hover:underline">+39 329 575 8447</a>
+       </div>
+      </div><!-- Locations -->
+      <div class="bg-white rounded-2xl p-6 card-shadow">
+       <div class="flex items-start space-x-4">
+        <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0"><span class="text-2xl">📍</span>
+        </div>
+        <div>
+         <h4 class="font-semibold text-gray-900 mb-3">Le Nostre Sedi</h4>
+         <div class="space-y-3">
+          <div class="p-3 bg-gray-50 rounded-lg">
+           <p class="font-medium text-gray-800">Sede Lusciano</p>
+           <p class="text-sm text-gray-600">Viale della Libertà, 81030 Lusciano CE</p>
+          </div>
+          <div class="p-3 bg-gray-50 rounded-lg">
+           <p class="font-medium text-gray-800">Sede Trentola Ducenta</p>
+           <p class="text-sm text-gray-600">Via Romaniello, 256, 81038 Trentola Ducenta CE</p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div><!-- WhatsApp Button --> <a href="https://wa.me/393295758447" target="_blank" rel="noopener noreferrer" class="block bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-6 rounded-2xl transition-all card-shadow">
+       <div class="flex items-center justify-center space-x-3">
+        <svg class="w-8 h-8" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg><span class="text-lg">Scrivici su WhatsApp</span>
+       </div></a> <!-- Opening Hours -->
+      <div class="bg-blue-700 rounded-2xl p-6 text-white">
+       <h4 class="font-semibold text-lg mb-4 flex items-center space-x-2"><span>🕐</span> <span>Orari di Apertura</span></h4>
+       <div class="space-y-2 text-blue-100">
+        <div class="flex justify-between"><span>Lunedì - Sabato</span> <span class="font-semibold text-white">8:15 - 19:00</span>
+        </div>
+        <div class="flex justify-between"><span>Domenica</span> <span class="font-semibold text-white">Chiuso</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12 md:py-16">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12"><!-- Logo & Description -->
+     <div class="lg:col-span-2">
+      <div class="flex items-center space-x-3 mb-4">
+       <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center overflow-hidden border border-gray-100 shadow-sm">
+                        <img src="https://jumpshare.com/share/yMiVpwHkq4LDKf8xli2I" alt="Logo Amato" class="w-full h-full object-cover">
+       </div><span class="text-white font-bold text-2xl">Detersivi Amato</span>
+      </div>
+      <p class="text-gray-400 mb-4 max-w-md">La forza del risparmio. Prodotti di qualità professionale per la pulizia della tua casa a prezzi accessibili.</p>
+      <div class="flex space-x-4"><a href="#" class="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-all"> <span class="text-lg">📘</span> </a> <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-pink-600 rounded-full flex items-center justify-center transition-all"> <span class="text-lg">📸</span> </a> <a href="https://wa.me/393295758447" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-gray-800 hover:bg-green-600 rounded-full flex items-center justify-center transition-all"> <span class="text-lg">💬</span> </a>
+      </div>
+     </div><!-- Quick Links -->
+     <div>
+      <h4 class="font-semibold text-lg mb-4">Link Utili</h4>
+      <ul class="space-y-3">
+       <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+       <li><a href="#categorie" class="text-gray-400 hover:text-white transition-colors">Categorie</a></li>
+       <li><a href="#prodotti" class="text-gray-400 hover:text-white transition-colors">Prodotti</a></li>
+       <li><a href="#volantino" class="text-gray-400 hover:text-white transition-colors">Volantino</a></li>
+       <li><a href="#chi-siamo" class="text-gray-400 hover:text-white transition-colors">Chi Siamo</a></li>
+       <li><a href="#contatti" class="text-gray-400 hover:text-white transition-colors">Contatti</a></li>
+      </ul>
+     </div><!-- Legal -->
+     <div>
+      <h4 class="font-semibold text-lg mb-4">Informazioni Legali</h4>
+      <ul class="space-y-3">
+       <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+       <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Termini e Condizioni</a></li>
+       <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Cookie Policy</a></li>
+       <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Resi e Rimborsi</a></li>
+      </ul>
+     </div>
+    </div><!-- Bottom Bar -->
+    <div class="border-t border-gray-800 pt-8">
+     <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+      <p class="text-gray-400 text-sm text-center md:text-left">© 2026 Detersivi Amato. Tutti i diritti riservati. P.IVA: 00000000000</p>
+      <div class="flex items-center space-x-4"><span class="text-gray-400 text-sm">Metodi di pagamento:</span>
+       <div class="flex space-x-2"><span class="text-2xl">💳</span> <span class="text-2xl">💵</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script>
+    // Default configuration
+    const defaultConfig = {
+      hero_title: 'Detersivi Amato',
+      hero_slogan: 'La forza del risparmio',
+      about_title: 'Chi Siamo',
+      contact_email: 'annaelisa2019@gmail.com',
+      contact_phone: '+39 329 575 8447',
+      primary_color: '#1d4ed8',
+      secondary_color: '#ffffff',
+      accent_color: '#dc2626',
+      text_color: '#1f2937',
+      font_family: 'Poppins'
+    };
+
+    let currentData = [];
+    let isSubmitting = false;
+
+    // Data SDK Handler
+    const dataHandler = {
+      onDataChanged(data) {
+        currentData = data;
+        // Messages are stored in Data SDK - viewable in Canva Sheets
+        console.log('Contact messages updated:', data.length);
+      }
+    };
+
+    // Element SDK Handler
+    const elementHandler = {
+      defaultConfig,
+      async onConfigChange(config) {
+        // Update hero title
+        const heroTitle = document.getElementById('hero-title');
+        if (heroTitle) heroTitle.textContent = config.hero_title || defaultConfig.hero_title;
+        
+        // Update hero slogan
+        const heroSlogan = document.getElementById('hero-slogan');
+        if (heroSlogan) heroSlogan.textContent = config.hero_slogan || defaultConfig.hero_slogan;
+        
+        // Update about title
+        const aboutTitle = document.getElementById('about-title');
+        if (aboutTitle) aboutTitle.textContent = config.about_title || defaultConfig.about_title;
+        
+        // Update contact email
+        const contactEmail = document.getElementById('contact-email-link');
+        const email = config.contact_email || defaultConfig.contact_email;
+        if (contactEmail) {
+          contactEmail.textContent = email;
+          contactEmail.href = `mailto:${email}`;
+        }
+        
+        // Update contact phone
+        const contactPhone = document.getElementById('contact-phone-link');
+        const phone = config.contact_phone || defaultConfig.contact_phone;
+        if (contactPhone) {
+          contactPhone.textContent = phone;
+          contactPhone.href = `tel:${phone.replace(/\s/g, '')}`;
+        }
+        
+        // Update font
+        const fontFamily = config.font_family || defaultConfig.font_family;
+        document.body.style.fontFamily = `${fontFamily}, sans-serif`;
+      },
+      mapToCapabilities(config) {
+        return {
+          recolorables: [
+            {
+              get: () => config.primary_color || defaultConfig.primary_color,
+              set: (value) => {
+                config.primary_color = value;
+                if (window.elementSdk) window.elementSdk.setConfig({ primary_color: value });
+              }
+            },
+            {
+              get: () => config.secondary_color || defaultConfig.secondary_color,
+              set: (value) => {
+                config.secondary_color = value;
+                if (window.elementSdk) window.elementSdk.setConfig({ secondary_color: value });
+              }
+            },
+            {
+              get: () => config.accent_color || defaultConfig.accent_color,
+              set: (value) => {
+                config.accent_color = value;
+                if (window.elementSdk) window.elementSdk.setConfig({ accent_color: value });
+              }
+            },
+            {
+              get: () => config.text_color || defaultConfig.text_color,
+              set: (value) => {
+                config.text_color = value;
+                if (window.elementSdk) window.elementSdk.setConfig({ text_color: value });
+              }
+            }
+          ],
+          borderables: [],
+          fontEditable: {
+            get: () => config.font_family || defaultConfig.font_family,
+            set: (value) => {
+              config.font_family = value;
+              if (window.elementSdk) window.elementSdk.setConfig({ font_family: value });
+            }
+          },
+          fontSizeable: undefined
+        };
+      },
+      mapToEditPanelValues(config) {
+        return new Map([
+          ['hero_title', config.hero_title || defaultConfig.hero_title],
+          ['hero_slogan', config.hero_slogan || defaultConfig.hero_slogan],
+          ['about_title', config.about_title || defaultConfig.about_title],
+          ['contact_email', config.contact_email || defaultConfig.contact_email],
+          ['contact_phone', config.contact_phone || defaultConfig.contact_phone]
+        ]);
+      }
+    };
+
+    // Initialize SDKs
+    async function initSDKs() {
+      if (window.elementSdk) {
+        window.elementSdk.init(elementHandler);
+      }
+      
+      if (window.dataSdk) {
+        const result = await window.dataSdk.init(dataHandler);
+        if (!result.isOk) {
+          console.error('Failed to initialize Data SDK');
+        }
+      }
+    }
+
+    initSDKs();
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Volantino navigation
+    const volantinoContainer = document.getElementById('volantino-container');
+    const volantinoItems = volantinoContainer.querySelectorAll('.volantino-item');
+    const prevBtn = document.getElementById('volantino-prev');
+    const nextBtn = document.getElementById('volantino-next');
+
+    prevBtn.addEventListener('click', () => {
+      const itemWidth = volantinoItems[0].offsetWidth + 24;
+      volantinoContainer.scrollBy({ left: -itemWidth, behavior: 'smooth' });
+    });
+
+    nextBtn.addEventListener('click', () => {
+      const itemWidth = volantinoItems[0].offsetWidth + 24;
+      volantinoContainer.scrollBy({ left: itemWidth, behavior: 'smooth' });
+    });
+
+    // Contact form submission
+    const contactForm = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const formSuccess = document.getElementById('form-success');
+    const formError = document.getElementById('form-error');
+
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      if (isSubmitting) return;
+      
+      // Check data limit
+      if (currentData.length >= 999) {
+        formError.querySelector('span:last-child').textContent = 'Limite messaggi raggiunto. Contattaci via WhatsApp.';
+        formError.classList.remove('hidden');
+        formSuccess.classList.add('hidden');
+        return;
+      }
+      
+      isSubmitting = true;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="animate-spin mr-2">⏳</span> Invio in corso...';
+      
+      const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value || '',
+        message: document.getElementById('message').value,
+        createdAt: new Date().toISOString(),
+        status: 'nuovo'
+      };
+      
+      if (window.dataSdk) {
+        const result = await window.dataSdk.create(formData);
+        
+        if (result.isOk) {
+          formSuccess.classList.remove('hidden');
+          formError.classList.add('hidden');
+          contactForm.reset();
+        } else {
+          formError.querySelector('span:last-child').textContent = 'Errore nell\'invio. Riprova più tardi.';
+          formError.classList.remove('hidden');
+          formSuccess.classList.add('hidden');
+        }
+      } else {
+        // Fallback if SDK not available
+        formSuccess.classList.remove('hidden');
+        formError.classList.add('hidden');
+        contactForm.reset();
+      }
+      
+      isSubmitting = false;
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = '<span>Invia Messaggio</span><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>';
+      
+      // Hide success message after 5 seconds
+      setTimeout(() => {
+        formSuccess.classList.add('hidden');
+      }, 5000);
+    });
+
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const offset = 80;
+          const targetPosition = target.offsetTop - offset;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Navbar background on scroll
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('shadow-lg');
+      } else {
+        navbar.classList.remove('shadow-lg');
+      }
+    });
+  </script><!--
+  ===========================================
+  COME VISUALIZZARE E GESTIRE I MESSAGGI DEI CLIENTI
+  ===========================================
+  
+  I messaggi inviati tramite il modulo di contatto vengono salvati automaticamente 
+  nel Canva Sheet associato a questo Canva Code.
+  
+  PER VISUALIZZARE I MESSAGGI:
+  1. Clicca sul pulsante "Data" sopra l'anteprima del codice
+  2. Si aprirà il Canva Sheet con tutti i messaggi ricevuti
+  3. Ogni riga contiene: nome, email, telefono, messaggio, data invio e stato
+  
+  PER RISPONDERE AI CLIENTI:
+  1. Apri il Canva Sheet e trova il messaggio a cui vuoi rispondere
+  2. Copia l'indirizzo email del cliente
+  3. Invia una risposta direttamente dalla tua email (annaelisa2019@gmail.com)
+  4. Aggiorna lo stato del messaggio nel Canva Sheet (es. da "nuovo" a "risposto")
+  
+  STRUTTURA DEI DATI SALVATI:
+  - name: Nome completo del cliente
+  - email: Indirizzo email del cliente
+  - phone: Numero di telefono (opzionale)
+  - message: Contenuto del messaggio
+  - createdAt: Data e ora di invio (formato ISO)
+  - status: Stato del messaggio ("nuovo", "risposto", "chiuso")
+  
+  NOTA: Puoi modificare lo stato manualmente nel Canva Sheet per tenere traccia
+  dei messaggi già gestiti.
+  ===========================================
+  -->
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9d02a1ed67a2a325',t:'MTc3MTQ3MTI3MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
